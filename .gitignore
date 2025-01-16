@@ -23,7 +23,30 @@ dist-ssr
 *.sln
 *.sw?
 
-*.env
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Firebase files containing sensitive data
+firestore.rules
+firebase-debug.log*
+firebase-debug.*.log*
+.firebase/
+firestore-debug.log*
+ui-debug.log*
+database-debug.log*
+pubsub-debug.log*
+*-debug.log
+.runtimeconfig.json
+serviceAccountKey.json
+**/firebase-export-*
+**/firebase-backup-*
+
+# Keep these files but remove sensitive data before committing
+# firestore.indexes.json
+# firebase.json
+# .firebaserc
 
 *.md 
 !README.md
